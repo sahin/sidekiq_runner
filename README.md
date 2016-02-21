@@ -53,9 +53,9 @@ SidekiqRunner::Run.run('UrlShortenerWorker', 'create_from_bitly', { id: 1, my_ot
 Run `my_other_method` method
 
 ```ruby
-SidekiqRunner::Run.enqueue('UrlShortenerWorker', 'create_from_bitly')
+SidekiqRunner::Run.enqueue('UrlShortenerWorker', 'my_other_method')
 # or
-SidekiqRunner::Run.run('UrlShortenerWorker', 'create_from_bitly')
+SidekiqRunner::Run.run('UrlShortenerWorker', 'my_other_method')
 ```
 
 #### NOTE
