@@ -5,7 +5,7 @@ This gem provides easily run multiple methods per sidekiq worker
 ## Installing
 
 ```ruby
-gem 'sidekiq-runner'
+gem 'sidekiq_runner'
 ```
 
 ### Example
