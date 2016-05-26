@@ -1,4 +1,5 @@
 # Sidekiq Runner
+[![Code Climate](https://codeclimate.com/github/movielala/sidekiq_runner/badges/gpa.svg)](https://codeclimate.com/github/movielala/sidekiq_runner)
 
 This gem provides easily run multiple methods per sidekiq worker
 
@@ -72,6 +73,3 @@ SidekiqRunner::Run.run('UrlShortenerWorker', 'my_other_method')
     $ bundle exec rake test
 
 If you need to test against local gems, use Bundler's gem :path option in the Gemfile and also edit `test/support/test_helper.rb` and tell the tests where the gem is checked out.
-
-## Code Status
-[![Code Climate](https://codeclimate.com/github/movielala/sidekiq_runner/badges/gpa.svg)](https://codeclimate.com/github/movielala/sidekiq_runner)
