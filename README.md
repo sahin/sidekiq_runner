@@ -38,25 +38,25 @@ end
 Run `create_from_google` method
 
 ```ruby
-SidekiqRunner::Run.enqueue('UrlShortenerWorker', 'create_from_google', { id: 1, my_other_arg: 2 })
+SidekiqRunner::Runner.enqueue('UrlShortenerWorker', 'create_from_google', { id: 1, my_other_arg: 2 })
 # or
-SidekiqRunner::Run.run('UrlShortenerWorker', 'create_from_google', { id: 1, my_other_arg: 2 })
+SidekiqRunner::Runner.run('UrlShortenerWorker', 'create_from_google', { id: 1, my_other_arg: 2 })
 ```
 
 Run `create_from_bitly` method
 
 ```ruby
-SidekiqRunner::Run.enqueue('UrlShortenerWorker', 'create_from_bitly', { id: 1, my_other_arg: 2 })
+SidekiqRunner::Runner.enqueue('UrlShortenerWorker', 'create_from_bitly', { id: 1, my_other_arg: 2 })
 # or
-SidekiqRunner::Run.run('UrlShortenerWorker', 'create_from_bitly', { id: 1, my_other_arg: 2 })
+SidekiqRunner::Runner.run('UrlShortenerWorker', 'create_from_bitly', { id: 1, my_other_arg: 2 })
 ```
 
 Run `my_other_method` method
 
 ```ruby
-SidekiqRunner::Run.enqueue('UrlShortenerWorker', 'my_other_method')
+SidekiqRunner::Runner.enqueue('UrlShortenerWorker', 'my_other_method')
 # or
-SidekiqRunner::Run.run('UrlShortenerWorker', 'my_other_method')
+SidekiqRunner::Runner.run('UrlShortenerWorker', 'my_other_method')
 ```
 
 #### NOTE
